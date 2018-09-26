@@ -4,6 +4,9 @@ import static java.lang.Math.*;
 
 public class FibonacciSeries {
     public long getNumberForRank(int i) {
+        if(i < 0){
+            throw new IllegalArgumentException("I should not be smaller than 0");
+        }
         long a = 0;
         long b = 1;
 
