@@ -24,7 +24,7 @@ class FibonacciSeriesTest {
 
     @Test
     void getNumberForNegativeNumbers() {
-        assertThrows(IllegalArgumentException.class, () -> fibonacciSeries.getNumberForRank(-1));
+        assertThrows(IllegalArgumentException.class, () -> fibonacciSeries.getNumberForRank(-1), "I should not be smaller than 0");
     }
 
     @ParameterizedTest(name = "the number with rank {0} in the fibonacci series is {1}")
